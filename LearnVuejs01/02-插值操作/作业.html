@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Title</title>
+		<script src="../js/vue.js"></script>
+		<style>
+			.active {
+				color: red;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="app">
+			<ul>
+				<li :class="{active: isActive}" v-for="(item,index) in movies" v-on:click="liClick">
+					{{item}}
+				</li>
+			</ul>
+		</div>
+		<script>
+			let app = new Vue({
+				el: '#app',
+				data: {
+				  movies: ['火影忍者','进击的巨人','咒术回战','海尔兄弟'],
+					isActive: false,
+				},
+				methods: {
+				  liClick: function () {
+					  this.Active = !this.Active;
+          }
+				}
+			})
+		</script>
+	</body>
+</html>

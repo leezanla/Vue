@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Title</title>
+		<script src="../js/vue.js"></script>
+	</head>
+	<body>
+		<div id="app">
+			<h1>{{firstName}}{{lastName}}</h1>
+		<!--mustache语法中不仅可以直接写变量，也可以写简单的表达式-->
+			<h1>{{firstName + lastName}}</h1>
+			<h1>{{firstName + ' ' + lastName}}</h1>
+		</div>
+		<script>
+			let app = new Vue({
+				el: '#app',
+				data: {
+				  firstName: 'kobe',
+					lastName: 'bryant'
+				}
+			})
+		</script>
+	</body>
+</html>

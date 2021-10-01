@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Title</title>
+		<script src="../js/vue.js"></script>
+	</head>
+	<body>
+		<div id="app">
+			<h2>{{showSource}}</h2>
+		</div>
+		<script>
+			const app = new Vue({
+				el: '#app',
+				data: {
+				  source: 99,
+				},
+				computed: {
+				  showSource() {
+				    let showMessage;
+				    if (this.source > 90){
+				      showMessage = '优秀';
+				    } else if (this.source >80) {
+				      showMessage = "良好";
+				    } else {
+				      showMessage = '不及格';
+				    }
+				    return showMessage;
+				  }
+				}
+			})
+		</script>
+	</body>
+</html>

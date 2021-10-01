@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Title</title>
+
+	</head>
+	<body>
+		<script>
+			let nums = [123, 24, 42, 523, 424, 13, 52];
+			let total = nums.filter(n => n < 100).map(n => n * 2).reduce((preValue, n) => preValue + n, 0);
+      console.log(total);
+			// let total = nums.filter(function (n) {
+			//   return n < 100;
+			// }).map(function (n) {
+			//   return n * 2;
+      // }).reduce(function (previousValue, n) {
+      //   return previousValue + n;
+      // }, 0)
+      // console.log(total);
+		</script>
+	</body>
+</html>

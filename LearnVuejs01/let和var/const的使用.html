@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Title</title>
+	</head>
+	<body>
+		<script>
+			//注意点1：一旦给const定义标识符，不能修改
+			const name = 'kob';
+			name = 'james';
+			//注意点2：使用const标识符时，必须进行赋值
+			const app;
+			//注意点3：常量的含义是指向的对象不能修改，但是可以改变对象内部的属性
+			const obj = {
+			  name: 'kob',
+				age: 40,
+				height: 1.88
+			}
+			obj.name = 'james';
+			obj.age = 18;
+			obj.height = 1.90;
+		</script>
+	</body>
+</html>

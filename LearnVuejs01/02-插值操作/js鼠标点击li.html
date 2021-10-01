@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Title</title>
+		<style>
+			.active {
+				color: red;
+			}
+		</style>
+	</head>
+	<body>
+		<div>
+			<ul>
+				<li>火影忍者</li>
+				<li>进击的巨人</li>
+				<li>咒术回战</li>
+				<li>海尔兄弟</li>
+			</ul>
+		</div>
+		<script>
+			let lis = document.querySelector('ul').querySelectorAll('li');
+      for (let i = 0; i < lis.length; i++) {
+	      lis[i].addEventListener('click', function () {
+          for (let j = 0; j < lis.length; j++) {
+	          lis[j].className = '';
+          }
+          this.className = 'active';
+        })
+      }
+		</script>
+	</body>
+</html>

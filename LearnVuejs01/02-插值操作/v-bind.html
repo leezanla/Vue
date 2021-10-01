@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Title</title>
+		<script src="../js/vue.js"></script>
+	</head>
+	<body>
+		<div id="app">
+			<a :href="aHref">百度一下</a>
+			<img :src="imgSrc" alt="">
+		</div>
+		<script>
+			let app = new Vue({
+				el: '#app',
+				data: {
+				  aHref: 'https://www.baidu.com',
+					imgSrc: 'https://vuejs.org/images/logo.svg'
+				}
+			})
+		</script>
+	</body>
+</html>

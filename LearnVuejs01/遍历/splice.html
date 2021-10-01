@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Title</title>
+		<script src="../js/vue.js"></script>
+	</head>
+	<body>
+		<div id="app">
+			<ul>
+				<li v-for="item in word">{{item}}</li>
+			</ul>
+			<button @click="btnClick">插入</button>
+		</div>
+		<script>
+			const app = new Vue({
+				el: '#app',
+				data: {
+				  word: ['a', 'b', 'c', 'd'],
+				},
+				methods: {
+				  btnClick() {
+				  //  如果有一个需求，是修改第2个数组中的值
+					//  通过索引值修改的话不会做到响应式的
+					  this.word[2] = 'z';// 现在好像可以了
+					//  解决方式一：通过splice来修改
+					  this.word.splice(1,1,'z');
+					//  解决方式二：Vue.set(对象，下标，要改变成为的值)
+					  Vue.set(this.word,1,'y');
+				  }
+				}
+			})
+		</script>
+	</body>
+</html>
