@@ -1,5 +1,5 @@
 /*!
- * Vue.js v2.5.21
+ * Vue.05-js v2.5.21
  * (c) 2014-2018 Evan You
  * Released under the MIT License.
  */
@@ -414,7 +414,7 @@
     ignoredElements: [],
 
     /**
-     * Custom user key aliases for v-on
+     * Custom user key aliases for 08-v-on
      */
     // $flow-disable-line
     keyCodes: Object.create(null),
@@ -1852,7 +1852,7 @@
   // event (#6566). However, using (macro) tasks everywhere also has subtle problems
   // when state is changed right before repaint (e.g. #6813, out-in transitions).
   // Here we use microtask by default, but expose a way to force (macro) task when
-  // needed (e.g. in event handlers attached by v-on).
+  // needed (e.g. in event handlers attached by 08-v-on).
   var microTimerFunc;
   var macroTimerFunc;
   var useMacroTask = false;
@@ -2632,7 +2632,7 @@
             "Event \"" + lowerCaseEvent + "\" is emitted in component " +
             (formatComponentName(vm)) + " but the handler is registered for \"" + event + "\". " +
             "Note that HTML attributes are case-insensitive and you cannot use " +
-            "v-on to listen to camelCase events when using in-DOM templates. " +
+            "08-v-on to listen to camelCase events when using in-DOM templates. " +
             "You should probably use \"" + (hyphenate(event)) + "\" instead of \"" + event + "\"."
           );
         }
@@ -4040,7 +4040,7 @@
     if (value) {
       if (!isPlainObject(value)) {
         warn(
-          'v-on without argument expects an Object value',
+          '08-v-on without argument expects an Object value',
           this
         );
       } else {
@@ -4326,7 +4326,7 @@
     // component constructor creation
     resolveConstructorOptions(Ctor);
 
-    // transform component v-model data into props & events
+    // transform component 07-v-model data into props & events
     if (isDef(data.model)) {
       transformModel(Ctor.options, data);
     }
@@ -4413,7 +4413,7 @@
     return merged
   }
 
-  // transform component v-model info (value and callback) into
+  // transform component 07-v-model info (value and callback) into
   // prop and event handler respectively.
   function transformModel (options, data) {
     var prop = (options.model && options.model.prop) || 'value';
@@ -6801,7 +6801,7 @@
   /*  */
 
   /**
-   * Cross-platform code generation for component v-model
+   * Cross-platform code generation for component 07-v-model
    */
   function genComponentModel (
     el,
@@ -6833,7 +6833,7 @@
   }
 
   /**
-   * Cross-platform codegen helper for generating v-model value assignment code.
+   * Cross-platform codegen helper for generating 07-v-model value assignment code.
    */
   function genAssignmentCode (
     value,
@@ -6848,7 +6848,7 @@
   }
 
   /**
-   * Parse a v-model expression into a base path and a final key segment.
+   * Parse a 07-v-model expression into a base path and a final key segment.
    * Handles both dot-path and possible square brackets.
    *
    * Possible cases:
@@ -6868,7 +6868,7 @@
 
   function parseModel (val) {
     // Fix https://github.com/vuejs/vue/pull/7730
-    // allow v-model="obj.val " (trailing whitespace)
+    // allow 07-v-model="obj.val " (trailing whitespace)
     val = val.trim();
     len = val.length;
 
@@ -6971,15 +6971,15 @@
       // value will throw an error.
       if (tag === 'input' && type === 'file') {
         warn$1(
-          "<" + (el.tag) + " v-model=\"" + value + "\" type=\"file\">:\n" +
-          "File inputs are read only. Use a v-on:change listener instead."
+          "<" + (el.tag) + " 07-v-model=\"" + value + "\" type=\"file\">:\n" +
+          "File inputs are read only. Use a 08-v-on:change listener instead."
         );
       }
     }
 
     if (el.component) {
       genComponentModel(el, value, modifiers);
-      // component v-model doesn't need extra runtime
+      // component 07-v-model doesn't need extra runtime
       return false
     } else if (tag === 'select') {
       genSelect(el, value, modifiers);
@@ -6991,12 +6991,12 @@
       genDefaultModel(el, value, modifiers);
     } else if (!config.isReservedTag(tag)) {
       genComponentModel(el, value, modifiers);
-      // component v-model doesn't need extra runtime
+      // component 07-v-model doesn't need extra runtime
       return false
     } else {
       warn$1(
-        "<" + (el.tag) + " v-model=\"" + value + "\">: " +
-        "v-model is not supported on this element type. " +
+        "<" + (el.tag) + " 07-v-model=\"" + value + "\">: " +
+        "07-v-model is not supported on this element type. " +
         'If you are working with contenteditable, it\'s recommended to ' +
         'wrap a library dedicated for that purpose inside a custom component.'
       );
@@ -7073,7 +7073,7 @@
   ) {
     var type = el.attrsMap.type;
 
-    // warn if v-bind:value conflicts with v-model
+    // warn if v-bind:value conflicts with 07-v-model
     // except for inputs with v-bind:type
     {
       var value$1 = el.attrsMap['v-bind:value'] || el.attrsMap[':value'];
@@ -7081,7 +7081,7 @@
       if (value$1 && !typeBinding) {
         var binding = el.attrsMap['v-bind:value'] ? 'v-bind:value' : ':value';
         warn$1(
-          binding + "=\"" + value$1 + "\" conflicts with v-model on the same element " +
+          binding + "=\"" + value$1 + "\" conflicts with 07-v-model on the same element " +
           'because the latter already expands to a value binding internally'
         );
       }
@@ -7120,9 +7120,9 @@
 
   /*  */
 
-  // normalize v-model event tokens that can only be determined at runtime.
+  // normalize 07-v-model event tokens that can only be determined at runtime.
   // it's important to place the event as the first in the array because
-  // the whole point is ensuring the v-model callback gets called before
+  // the whole point is ensuring the 07-v-model callback gets called before
   // user-attached handlers.
   function normalizeEvents (on) {
     /* istanbul ignore if */
@@ -7249,7 +7249,7 @@
     }
   }
 
-  // check platforms/web/util/attrs.js acceptValue
+  // check platforms/web/util/attrs.05-js acceptValue
 
 
   function shouldUpdateValue (elm, checkVal) {
@@ -7272,7 +7272,7 @@
 
   function isDirtyWithModifiers (elm, newVal) {
     var value = elm.value;
-    var modifiers = elm._vModifiers; // injected by v-model runtime
+    var modifiers = elm._vModifiers; // injected by 07-v-model runtime
     if (isDef(modifiers)) {
       if (modifiers.lazy) {
         // inputs with lazy should only be updated when not in focus
@@ -8124,7 +8124,7 @@
     var isMultiple = el.multiple;
     if (isMultiple && !Array.isArray(value)) {
       warn(
-        "<select multiple v-model=\"" + (binding.expression) + "\"> " +
+        "<select multiple 07-v-model=\"" + (binding.expression) + "\"> " +
         "expects an Array value for its binding, but got " + (Object.prototype.toString.call(value).slice(8, -1)),
         vm
       );
@@ -9668,7 +9668,7 @@
           } else {
             addAttr(el, name, value);
           }
-        } else if (onRE.test(name)) { // v-on
+        } else if (onRE.test(name)) { // 08-v-on
           name = name.replace(onRE, '');
           addHandler(el, name, value, modifiers, false, warn$2);
         } else { // normal directives
@@ -9778,11 +9778,11 @@
     while (_el) {
       if (_el.for && _el.alias === value) {
         warn$2(
-          "<" + (el.tag) + " v-model=\"" + value + "\">: " +
-          "You are binding v-model directly to a v-for iteration alias. " +
+          "<" + (el.tag) + " 07-v-model=\"" + value + "\">: " +
+          "You are binding 07-v-model directly to a v-for iteration alias. " +
           "This will not be able to modify the v-for source array because " +
           "writing to the alias is like modifying a function local variable. " +
-          "Consider using an array of objects and use v-model on an object property instead."
+          "Consider using an array of objects and use 07-v-model on an object property instead."
         );
       }
       _el = _el.parent;
@@ -9794,7 +9794,7 @@
   function preTransformNode (el, options) {
     if (el.tag === 'input') {
       var map = el.attrsMap;
-      if (!map['v-model']) {
+      if (!map['07-v-model']) {
         return
       }
 
@@ -10179,7 +10179,7 @@
 
   function on (el, dir) {
     if (dir.modifiers) {
-      warn("v-on without argument does not support modifiers.");
+      warn("08-v-on without argument does not support modifiers.");
     }
     el.wrapListeners = function (code) { return ("_g(" + code + "," + (dir.value) + ")"); };
   }
@@ -10437,7 +10437,7 @@
     if (el.scopedSlots) {
       data += (genScopedSlots(el.scopedSlots, state)) + ",";
     }
-    // component v-model
+    // component 07-v-model
     if (el.model) {
       data += "model:{value:" + (el.model.value) + ",callback:" + (el.model.callback) + ",expression:" + (el.model.expression) + "},";
     }
@@ -10453,7 +10453,7 @@
     if (el.wrapData) {
       data = el.wrapData(data);
     }
-    // v-on data wrap
+    // 08-v-on data wrap
     if (el.wrapListeners) {
       data = el.wrapListeners(data);
     }
@@ -10805,7 +10805,7 @@
         } catch (e) {
           if (e.toString().match(/unsafe-eval|CSP/)) {
             warn$$1(
-              'It seems you are using the standalone build of Vue.js in an ' +
+              'It seems you are using the standalone build of Vue.05-js in an ' +
               'environment with Content Security Policy that prohibits unsafe-eval. ' +
               'The template compiler cannot work in this environment. Consider ' +
               'relaxing the policy to allow unsafe-eval or pre-compiling your ' +

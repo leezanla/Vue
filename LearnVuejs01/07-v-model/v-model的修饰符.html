@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Title</title>
+		<script src="../05-js/vue.js"></script>
+	</head>
+	<body>
+		<!--这个测试的是lazy修饰符-->
+		<!--<div id="app">-->
+		<!--	<input type="text" 07-v-model.lazy="message"> <br>-->
+		<!--	<h3>{{message}}</h3>-->
+		<!--</div>-->
+		<!--<script>-->
+		<!--	const app = new Vue({-->
+		<!--		el: '#app',-->
+		<!--		data: {-->
+		<!--		  message: '',-->
+		<!--		}-->
+		<!--	})-->
+		<!--</script>-->
+
+		<!--这个测试的number修饰符-->
+		<div id="app">
+			<input type="text" v-model.number="age"> <br>
+			<h3>{{age}} ---> {{typeof age}}</h3>
+		</div>
+		<script>
+			const app = new Vue({
+				el: '#app',
+				data: {
+				  age: 0,
+				}
+			})
+		</script>
+	</body>
+</html>
