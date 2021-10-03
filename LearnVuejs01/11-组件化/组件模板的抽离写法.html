@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Title</title>
+		<script src="../js/vue.js"></script>
+	</head>
+	<body>
+		<div id="app">
+			<cpn1></cpn1>
+		</div>
+		<!--这里使用的script标签-->
+		<!--<script type="text/x-template" id="cpn1">-->
+		<!--	<div>-->
+		<!--		<h3>我是一个标题</h3>-->
+		<!--		<p>我是内容</p>-->
+		<!--	</div>-->
+		<!--</script>-->
+
+		<template id="cpn1">
+			<div>
+				<h3>我是一个标题</h3>
+				<p>我是内容</p>
+			</div>
+		</template>
+		<script>
+      const app = new Vue({
+        el: '#app',
+        data: {
+          message: '你好',
+        },
+        components: {
+          cpn1: {
+            template: "#cpn1",
+          }
+        }
+      })
+		</script>
+	</body>
+</html>

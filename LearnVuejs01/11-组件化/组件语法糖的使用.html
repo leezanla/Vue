@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Title</title>
+		<script src="../js/vue.js"></script>
+	</head>
+	<body>
+		<div id="app">
+			<my-cpn1></my-cpn1>
+			<my-cpn2></my-cpn2>
+			<cpn3></cpn3>
+		</div>
+		<script>
+      <!--全局组件的没有使用语法糖-->
+      //创建组件对象
+      const cpn1 = Vue.extend({
+        template: `
+					<div>我是全局组件</div>
+				`,
+      });
+      //注册组件
+      Vue.component('my-cpn1', cpn1);
+
+      // 全局组件的语法糖使用
+      Vue.component('my-cpn2', {
+        template: `
+					<div>我是全局组件</div>
+				`,
+      })
+
+
+      const app = new Vue({
+        el: '#app',
+        components: {
+          'cpn3': {
+            template: `
+							<div>我是全局组件</div>
+						`,
+          }
+        }
+      })
+		</script>
+	</body>
+</html>
