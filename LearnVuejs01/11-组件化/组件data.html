@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Title</title>
+		<script src="../js/vue.js"></script>
+	</head>
+	<body>
+		<template id="content">
+			<div>
+				<h3>{{message}}</h3>
+			</div>
+		</template>
+		<div id="app">
+			<titlecpn></titlecpn>
+		</div>
+		<script>
+      const app = new Vue({
+        el: '#app',
+        components: {
+          titlecpn: {
+            template: '#content',
+            data() {
+              return {
+                message: '我是一个标题'
+              }
+            },
+          },
+        }
+      })
+		</script>
+	</body>
+</html>

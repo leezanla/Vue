@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Title</title>
+		<script src="../js/vue.js"></script>
+	</head>
+	<body>
+		<div id="app">
+			<cpn @btnClick="item-click"></cpn>
+		</div>
+		<template id="cpns">
+			<div>
+				<button v-for="item in categories" @click="itemclick(item)">{{item.name}}</button>
+			</div>
+		</template>
+		<script>
+			const cpn = {
+				template: '#cpns',
+				data() {
+				  return {
+            categories:[
+              {id: 'aaa', name: '家用电器'},
+              {id: 'bbb', name: '手机数码'},
+              {id: 'ccc', name: '水果'},
+              {id: 'ddd', name: '家具'},
+            ]
+				  }
+				},
+				methods: {
+				  itemclick(item) {
+				    this.$emit('item-click')//这个是发出事件对象，用于父级监听
+				  }
+				}
+			}
+
+
+
+			const app = new Vue({
+				el: '#app',
+				components: {
+          cpn,
+				},
+				methods: {
+				  btnClick() {
+            console.log('btnClick',item);
+				  }
+				}
+			})
+		</script>
+	</body>
+</html>
