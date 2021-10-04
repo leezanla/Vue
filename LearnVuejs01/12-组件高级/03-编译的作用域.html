@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Title</title>
+		<script src="../js/vue.js"></script>
+	</head>
+	<body>
+		<div id="app">
+			<cpn v-show="isShow"></cpn>
+		</div>
+		<template id="cpn">
+			<div>
+				<p v-show="isShow">我是组件中的p</p>
+			</div>
+		</template>
+		<script>
+			const app = new Vue({
+				el: '#app',
+				data: {
+				  isShow: true,
+				},
+				components: {
+				  cpn: {
+				    template: '#cpn',
+					  data() {
+				      return {
+                isShow: false,
+				      }
+					  }
+				  }
+				}
+			})
+		</script>
+	</body>
+</html>

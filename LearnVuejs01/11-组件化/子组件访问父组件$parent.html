@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Title</title>
+		<script src="../js/vue.js"></script>
+	</head>
+	<body>
+		<!--根组件-->
+		<div id="app">
+			<cpn1></cpn1>
+		</div>
+		<!--第一个组件-->
+		<template id="cpn1">
+			<div>
+				<cpn2></cpn2>
+			</div>
+		</template>
+		<!--第二个组件-->
+		<template id="cpn2">
+			<div>
+				<p>第二个组件</p>
+				<button @click="btnClick">按钮</button>
+			</div>
+		</template>
+		<script>
+      const app = new Vue({
+        el: '#app',
+        components: {
+          cpn1: {
+            template: '#cpn1',
+            data() {
+              return {
+                name: '我是第一个组件中的name',
+              }
+            },
+	          components: {
+              cpn2: {
+                template: '#cpn2',
+	              methods: {
+                  btnClick() {
+                    console.log(this.$parent);
+                    console.log(this.$root);
+                  }
+	              }
+              }
+	          }
+          }
+        }
+      })
+		</script>
+	</body>
+</html>

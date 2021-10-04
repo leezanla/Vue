@@ -1,20 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8">
-		<title>Title</title>
-		<script src="../js/vue.js"></script>
-	</head>
-	<body>
-		<div id="app">
-			<cpn :c-info="info"></cpn>
-		</div>
-		<template id="cinfo">
-			<h3>{{cInfo}}</h3>
-		</template>
-		<script>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Title</title>
+    <script src="../js/vue.js"></script>
+  </head>
+  <body>
+    <div id="app">
+      <cpn :c-info="info"></cpn>
+    </div>
+    <template id="cinfo">
+      <h3>{{cInfo}}</h3>
+    </template>
+    <script>
       const cpn = {
-        template: '#cinfo',
+        template: "#cinfo",
         props: {
           cInfo: {
             type: Object,
@@ -22,22 +22,22 @@
               return {};
             },
             required: true,
-          }
-        }
-      }
+          },
+        },
+      };
       const app = new Vue({
-        el: '#app',
+        el: "#app",
         data: {
           info: {
-            name: 'li',
+            name: "li",
             age: 18,
-            gender: 'male',
-          }
+            gender: "male",
+          },
         },
         components: {
           cpn,
-        }
-      })
-		</script>
-	</body>
+        },
+      });
+    </script>
+  </body>
 </html>

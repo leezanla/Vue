@@ -1,14 +1,16 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport"
-		      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-		<meta http-equiv="X-UA-Compatible" content="ie=edge">
-		<title>Document</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
     <script src="../js/vue.js"></script>
-	</head>
-	<body>
+  </head>
+  <body>
     <div id="app">
       <cpn2></cpn2>
     </div>
@@ -20,7 +22,7 @@
             <p>我是内容1</p>
           </div>
         `,
-      })
+      });
       const cpn2 = Vue.extend({
         template: `
           <div>
@@ -31,17 +33,17 @@
         `,
         components: {
           cpn1: cpn1,
-        }
-      })
+        },
+      });
       const app = new Vue({
-        el: '#app',
+        el: "#app",
         data: {
-          message: '你好',
+          message: "你好",
         },
         components: {
-          cpn2: cpn2
-        }
-      })
+          cpn2: cpn2,
+        },
+      });
     </script>
-	</body>
+  </body>
 </html>
