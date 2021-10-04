@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Title</title>
+		<script src="../js/vue.js"></script>
+	</head>
+	<body>
+		<div id="app">
+			<cpn></cpn>
+			<button @click="btnClick">按钮</button>
+		</div>
+
+		<template id="cpn">
+			<div>我是cpn中的内容</div>
+		</template>
+		<script>
+			const app = new Vue({
+				el: '#app',
+				methods: {
+				  btnClick() {
+            console.log(this.$children);
+            console.log(this.$children[0].showMessage());
+            console.log(this.$children[0].name);
+				  }
+				},
+				components: {
+				  cpn: {
+				    template: '#cpn',
+            data() {
+              return {
+                name: 'lee',
+              }
+            },
+            methods: {
+              showMessage() {
+                console.log('showMessage');
+              }
+            }
+				  },
+				}
+			})
+		</script>
+	</body>
+</html>

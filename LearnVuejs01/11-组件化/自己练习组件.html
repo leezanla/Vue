@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Title</title>
+		<script src="../node_modules/vue/dist/vue.min.js"></script>
+	</head>
+	<body>
+		<div id="app">
+			<cpn :cmessage="message"></cpn>
+		</div>
+
+		<template id="cpn">
+			<div>
+				<p>{{cmessage}}</p>
+				<input type="text" v-model="cmessage">
+
+				<!--这是第二个input中的内容-->
+				<p>{{cmessage2}}</p>
+				<input type="text" v-model="cmessage2">
+
+			</div>
+		</template>
+
+		<script>
+			const app = new Vue({
+				el: '#app',
+				data: {
+				  message: '你好吗？',
+				},
+				components: {
+				  cpn: {
+				    template: '#cpn',
+					  props: {
+				      cmessage: {
+                type: String,
+				      }
+					  },
+					  data() {
+				      return {
+				        cmessage: this.cmessage,
+                cmessage2: this.cmessage,
+				      }
+					  },
+					  methods: {
+
+					  }
+				  }
+				}
+			})
+		</script>
+	</body>
+</html>

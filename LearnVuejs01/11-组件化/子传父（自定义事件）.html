@@ -7,8 +7,10 @@
 	</head>
 	<body>
 		<div id="app">
-			<cpn @btnClick="item-click"></cpn>
+			<cpn @item-click="btnclick"></cpn>
 		</div>
+
+
 		<template id="cpns">
 			<div>
 				<button v-for="item in categories" @click="itemclick(item)">{{item.name}}</button>
@@ -29,7 +31,7 @@
 				},
 				methods: {
 				  itemclick(item) {
-				    this.$emit('item-click')//这个是发出事件对象，用于父级监听
+				    this.$emit('item-click',item)//这个是发出事件对象，用于父级监听
 				  }
 				}
 			}
@@ -42,7 +44,7 @@
           cpn,
 				},
 				methods: {
-				  btnClick() {
+				  btnclick(item) {
             console.log('btnClick',item);
 				  }
 				}
