@@ -1,0 +1,10 @@
+body {
+    /*background-color: red;*/
+    color: black;
+    font-size: 20px;
+    background: url('../img/wawa.jpg');
+}
+h3 {
+    color: black;
+    font-size: 20px;
+}
