@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Title</title>
+	</head>
+	<body>
+		<script>
+			//1、参数问题
+			//1.1.放入两个参数
+			const sum = (num1, num2) => {
+			  return num1 + num2;
+			}
+			//1.2.放入一个参数(如果是放入一个参数，则可以把小括号去掉)
+			const power = num => {
+			  return num * num;
+			}
+			//2.函数中的代码块的数量决定写法不同
+			//2.1.当代码块中有多条语法时
+			const mul = (num1, num2) => {
+        console.log(num1);
+        console.log(num2);
+      }
+      //2.2.当代码块中只有一条语句时(可以将大括号省略了，也可以不写return)
+			const add = (num1, num2) => num1 + num2
+		</script>
+	</body>
+</html>
