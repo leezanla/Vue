@@ -1,9 +1,252 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="a0be0de1-45bf-4278-a179-48db4cd71381" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../LearnVuejs01/13-前端模块化/01-ES6的模块化实现/hong.js" beforeDir="false" afterPath="$PROJECT_DIR$/../LearnVuejs01/13-前端模块化/01-ES6的模块化实现/hong.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LearnVuejs01/13-前端模块化/01-ES6的模块化实现/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../LearnVuejs01/13-前端模块化/01-ES6的模块化实现/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LearnVuejs01/13-前端模块化/01-ES6的模块化实现/ming.js" beforeDir="false" afterPath="$PROJECT_DIR$/../LearnVuejs01/13-前端模块化/01-ES6的模块化实现/ming.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LearnVuejs01/13-前端模块化/01-ES6的模块化实现/ming1.js" beforeDir="false" afterPath="$PROJECT_DIR$/../LearnVuejs01/13-前端模块化/01-ES6的模块化实现/ming1.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LearnVuejs02/.idea/LearnVuejs02.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../LearnVuejs02/.idea/LearnVuejs02.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LearnVuejs02/01-webpack的使用/01-webpack的起步/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../LearnVuejs02/01-webpack的使用/01-webpack的起步/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LearnVuejs02/01-webpack的使用/01-webpack的起步/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/../LearnVuejs02/01-webpack的使用/01-webpack的起步/src/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LearnVuejs02/01-webpack的使用/01-webpack的起步/src/mathUtils.js" beforeDir="false" afterPath="$PROJECT_DIR$/../LearnVuejs02/01-webpack的使用/01-webpack的起步/src/mathUtils.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LearnVuejs02/01-webpack的使用/02-webpack的配置/webpack.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/../LearnVuejs02/01-webpack的使用/02-webpack的配置/webpack.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LearnVuejs02/01-webpack的使用/03-webpack的loader/dist/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../LearnVuejs02/01-webpack的使用/03-webpack的loader/dist/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LearnVuejs02/01-webpack的使用/03-webpack的loader/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../LearnVuejs02/01-webpack的使用/03-webpack的loader/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LearnVuejs02/01-webpack的使用/03-webpack的loader/node_modules/.package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../LearnVuejs02/01-webpack的使用/03-webpack的loader/node_modules/.package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LearnVuejs02/01-webpack的使用/03-webpack的loader/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../LearnVuejs02/01-webpack的使用/03-webpack的loader/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LearnVuejs02/01-webpack的使用/03-webpack的loader/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../LearnVuejs02/01-webpack的使用/03-webpack的loader/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LearnVuejs02/01-webpack的使用/03-webpack的loader/src/css/special.less" beforeDir="false" afterPath="$PROJECT_DIR$/../LearnVuejs02/01-webpack的使用/03-webpack的loader/src/css/special.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LearnVuejs02/01-webpack的使用/03-webpack的loader/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../LearnVuejs02/01-webpack的使用/03-webpack的loader/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LearnVuejs02/01-webpack的使用/03-webpack的loader/webpack.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/../LearnVuejs02/01-webpack的使用/03-webpack的loader/webpack.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LearnVuejs02/01-webpack的使用/04-webpack配置vue/dist/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../LearnVuejs02/01-webpack的使用/04-webpack配置vue/dist/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LearnVuejs02/01-webpack的使用/04-webpack配置vue/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../LearnVuejs02/01-webpack的使用/04-webpack配置vue/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LearnVuejs02/01-webpack的使用/04-webpack配置vue/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../LearnVuejs02/01-webpack的使用/04-webpack配置vue/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LearnVuejs02/01-webpack的使用/04-webpack配置vue/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../LearnVuejs02/01-webpack的使用/04-webpack配置vue/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LearnVuejs02/01-webpack的使用/04-webpack配置vue/src/css/normal.css" beforeDir="false" afterPath="$PROJECT_DIR$/../LearnVuejs02/01-webpack的使用/04-webpack配置vue/src/css/normal.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LearnVuejs02/01-webpack的使用/04-webpack配置vue/webpack.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/../LearnVuejs02/01-webpack的使用/04-webpack配置vue/webpack.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LearnVuejs02/01-webpack的使用/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../LearnVuejs02/01-webpack的使用/test/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LearnVuejs02/01-webpack的使用/test/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/../LearnVuejs02/01-webpack的使用/test/src/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LearnVuejs02/01-webpack的使用/test/vue/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../LearnVuejs02/01-webpack的使用/test/vue/App.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LearnVuejs02/01-webpack的使用/test/vue/Cpn.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../LearnVuejs02/01-webpack的使用/test/vue/Cpn.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LearnVuejs02/01-webpack的使用/test/webpack.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/../LearnVuejs02/01-webpack的使用/test/webpack.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tabbar/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/tabbar/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tabbar/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/tabbar/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tabbar/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/tabbar/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tabbar/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/tabbar/src/App.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tabbar/src/assets/css/base.css" beforeDir="false" afterPath="$PROJECT_DIR$/tabbar/src/assets/css/base.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tabbar/src/components/tarbar/TabBar.vue" beforeDir="false" afterPath="$PROJECT_DIR$/tabbar/src/components/tarbar/TabBar.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tabbar/src/components/tarbar/TabBarItem.vue" beforeDir="false" afterPath="$PROJECT_DIR$/tabbar/src/components/tarbar/TabBarItem.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tabbar/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/tabbar/src/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tabbar/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/tabbar/src/router/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LearrnVuejs03/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LearrnVuejs03/.idea/LearrnVuejs03.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LearrnVuejs03/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LearrnVuejs03/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LearrnVuejs03/.vscode/settings.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LearrnVuejs03/01-runtimecompiler/.babelrc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LearrnVuejs03/01-runtimecompiler/.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LearrnVuejs03/01-runtimecompiler/.eslintignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LearrnVuejs03/01-runtimecompiler/.eslintrc.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LearrnVuejs03/01-runtimecompiler/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LearrnVuejs03/01-runtimecompiler/.postcssrc.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LearrnVuejs03/01-runtimecompiler/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LearrnVuejs03/01-runtimecompiler/build/build.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LearrnVuejs03/01-runtimecompiler/build/check-versions.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LearrnVuejs03/01-runtimecompiler/build/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LearrnVuejs03/01-runtimecompiler/build/utils.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LearrnVuejs03/01-runtimecompiler/build/vue-loader.conf.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LearrnVuejs03/01-runtimecompiler/build/webpack.base.conf.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LearrnVuejs03/01-runtimecompiler/build/webpack.dev.conf.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LearrnVuejs03/01-runtimecompiler/build/webpack.prod.conf.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LearrnVuejs03/01-runtimecompiler/config/dev.env.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LearrnVuejs03/01-runtimecompiler/config/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LearrnVuejs03/01-runtimecompiler/config/prod.env.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LearrnVuejs03/01-runtimecompiler/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LearrnVuejs03/01-runtimecompiler/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LearrnVuejs03/01-runtimecompiler/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LearrnVuejs03/01-runtimecompiler/src/App.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LearrnVuejs03/01-runtimecompiler/src/assets/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LearrnVuejs03/01-runtimecompiler/src/components/HelloWorld.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LearrnVuejs03/01-runtimecompiler/src/main.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LearrnVuejs03/01-runtimecompiler/static/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LearrnVuejs03/02-runtimeonly/.babelrc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LearrnVuejs03/02-runtimeonly/.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LearrnVuejs03/02-runtimeonly/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LearrnVuejs03/02-runtimeonly/.postcssrc.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LearrnVuejs03/02-runtimeonly/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LearrnVuejs03/02-runtimeonly/build/build.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LearrnVuejs03/02-runtimeonly/build/check-versions.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LearrnVuejs03/02-runtimeonly/build/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LearrnVuejs03/02-runtimeonly/build/utils.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LearrnVuejs03/02-runtimeonly/build/vue-loader.conf.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LearrnVuejs03/02-runtimeonly/build/webpack.base.conf.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LearrnVuejs03/02-runtimeonly/build/webpack.dev.conf.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LearrnVuejs03/02-runtimeonly/build/webpack.prod.conf.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LearrnVuejs03/02-runtimeonly/config/dev.env.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LearrnVuejs03/02-runtimeonly/config/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LearrnVuejs03/02-runtimeonly/config/prod.env.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LearrnVuejs03/02-runtimeonly/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LearrnVuejs03/02-runtimeonly/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LearrnVuejs03/02-runtimeonly/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LearrnVuejs03/02-runtimeonly/src/App.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LearrnVuejs03/02-runtimeonly/src/assets/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LearrnVuejs03/02-runtimeonly/src/components/HelloWorld.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LearrnVuejs03/02-runtimeonly/src/main.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LearrnVuejs03/02-runtimeonly/static/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LearrnVuejs03/02-runtimeonly/testvuecli3/.browserslistrc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LearrnVuejs03/02-runtimeonly/testvuecli3/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LearrnVuejs03/02-runtimeonly/testvuecli3/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LearrnVuejs03/02-runtimeonly/testvuecli3/babel.config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LearrnVuejs03/02-runtimeonly/testvuecli3/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LearrnVuejs03/02-runtimeonly/testvuecli3/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LearrnVuejs03/02-runtimeonly/testvuecli3/public/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LearrnVuejs03/02-runtimeonly/testvuecli3/public/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LearrnVuejs03/02-runtimeonly/testvuecli3/src/App.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LearrnVuejs03/02-runtimeonly/testvuecli3/src/assets/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LearrnVuejs03/02-runtimeonly/testvuecli3/src/components/HelloWorld.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LearrnVuejs03/02-runtimeonly/testvuecli3/src/main.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LearrnVuejs03/arrowfunction/UseArrowFunctin.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LearrnVuejs03/arrowfunction/parameter.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LearrnVuejs03/arrowfunction/usearrowfunctionthis.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LearrnVuejs03/learnvuerouter/.babelrc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LearrnVuejs03/learnvuerouter/.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LearrnVuejs03/learnvuerouter/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LearrnVuejs03/learnvuerouter/.postcssrc.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LearrnVuejs03/learnvuerouter/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LearrnVuejs03/learnvuerouter/build/build.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LearrnVuejs03/learnvuerouter/build/check-versions.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LearrnVuejs03/learnvuerouter/build/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LearrnVuejs03/learnvuerouter/build/utils.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LearrnVuejs03/learnvuerouter/build/vue-loader.conf.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LearrnVuejs03/learnvuerouter/build/webpack.base.conf.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LearrnVuejs03/learnvuerouter/build/webpack.dev.conf.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LearrnVuejs03/learnvuerouter/build/webpack.prod.conf.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LearrnVuejs03/learnvuerouter/config/dev.env.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LearrnVuejs03/learnvuerouter/config/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LearrnVuejs03/learnvuerouter/config/prod.env.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LearrnVuejs03/learnvuerouter/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LearrnVuejs03/learnvuerouter/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LearrnVuejs03/learnvuerouter/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LearrnVuejs03/learnvuerouter/src/App.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LearrnVuejs03/learnvuerouter/src/assets/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LearrnVuejs03/learnvuerouter/src/components/About.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LearrnVuejs03/learnvuerouter/src/components/Home.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LearrnVuejs03/learnvuerouter/src/components/HomeMessage.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LearrnVuejs03/learnvuerouter/src/components/HomeNews.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LearrnVuejs03/learnvuerouter/src/components/Profile.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LearrnVuejs03/learnvuerouter/src/components/User.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LearrnVuejs03/learnvuerouter/src/main.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LearrnVuejs03/learnvuerouter/src/router/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LearrnVuejs03/learnvuerouter/static/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LearrnVuejs03/testvuecli3/.browserslistrc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LearrnVuejs03/testvuecli3/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LearrnVuejs03/testvuecli3/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LearrnVuejs03/testvuecli3/babel.config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LearrnVuejs03/testvuecli3/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LearrnVuejs03/testvuecli3/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LearrnVuejs03/testvuecli3/public/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LearrnVuejs03/testvuecli3/public/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LearrnVuejs03/testvuecli3/src/App.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LearrnVuejs03/testvuecli3/src/assets/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LearrnVuejs03/testvuecli3/src/components/Profile.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LearrnVuejs03/testvuecli3/src/main.js" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+        <option value="Vue Single File Component" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="ProjectId" id="1zDSLiD1Dx8PRCJvhWtRqVx282O" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="autoscrollFromSource" value="true" />
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
     <option name="sortByType" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="dart.analysis.tool.window.visible" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/tabbar2/src/assets" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\User\ALFIE\Documents\code\vue\LearnVuejs04\tabbar2\src\assets" />
+      <recent name="D:\User\ALFIE\Documents\code\vue\LearnVuejs04\tabbar2\src\components" />
+      <recent name="D:\User\ALFIE\Documents\code\vue\LearnVuejs04\tabbar\src\assets\img" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a0be0de1-45bf-4278-a179-48db4cd71381" name="Default Changelist" comment="" />
+      <created>1633681111113</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1633681111113</updated>
+      <workItem from="1633681112322" duration="5457000" />
+      <workItem from="1633693175016" duration="8657000" />
+      <workItem from="1633739663652" duration="4482000" />
+      <workItem from="1633744805312" duration="1576000" />
+      <workItem from="1633746404205" duration="814000" />
+      <workItem from="1633747235134" duration="4131000" />
+      <workItem from="1633757733246" duration="4841000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
 </project>

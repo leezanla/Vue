@@ -1,9 +1,10 @@
 const path = require('path');
-module.export = {
-  entry: './src/index.js',
+module.exports = {
+  entry: './src/main.js',
   output: {
-    path: path.resolve(__dirname,'dist'),
-    filename: 'index.js'
+    path: path.resolve(__dirname, 'dist'),
+    filename: 'main.js',
+    publicPath: 'dist/img/'
   },
   module: {
     rules: [
@@ -18,6 +19,40 @@ module.export = {
         //如是有多个loader时，webpack是从右向左开始读取的
         use: ["style-loader", "css-loader"],
       },
+      {
+        test: /\.less$/,
+        use: [{
+          loader: "style-loader", // creates style nodes from JS strings
+        }, {
+          loader: "css-loader" // translates CSS into CommonJS
+        }, {
+          loader: "less-loader", // compiles Less to CSS
+        }]
+      },
+
+        //url-loader
+      {
+        test: /\.(png|jpg|gif)$/,
+        use: [
+          {
+            loader: 'url-loader',
+            options: {
+              limit: 11000,
+              name: "img/[name].[hash:8].[ext]"
+            },
+          },
+        ],
+      },
+      {
+        test: /\.m?js$/,
+        exclude: /(node_modules|bower_components)/,
+        use: {
+          loader: 'babel-loader',
+          options: {
+            presets: ['es2015']
+          }
+        }
+      }
     ],
   }
 }
